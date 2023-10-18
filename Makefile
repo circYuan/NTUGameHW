@@ -6,5 +6,8 @@ all:
 verifier: src/verifier.cpp src/ewn.cpp
 	g++ ${CFLAGS} $^ -o $@
 
+runner: src/my_program/runner.cc
+	g++ ${CFLAGS} $^ -o $@
+
 clean:
 	rm -f verifier
